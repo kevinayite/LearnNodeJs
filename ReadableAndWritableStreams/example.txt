@@ -1,0 +1,11 @@
+This mechanism enables the weaponized code to run a remote access tool and achieve 
+persistence on the target system
+ ▪ Command & Control (C2)
+ • The weaponized code establishes an outbound channel to a remote server that can then be used 
+to control the remote access tool and possibly download additional tools to progress the attack
+ ▪ Actions on Objectives
+ • The attacker typically uses the access he has achieved to covertly collect information from 
+target systems and transfer it to a remote system (data exfiltration) or achieve other goals and 
+motives
+ • Kill chain analysis can be used to identify a defensive course-of- action matrix to counter the 
+progress of an attack at each stage
