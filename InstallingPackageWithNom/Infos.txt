@@ -1,0 +1,5 @@
+www.npmjs.com ==> we can find instructions on how to install 
+
+to uninstall a package: npm uninstall lodash
+
+========================================================

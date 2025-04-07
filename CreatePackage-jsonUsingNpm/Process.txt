@@ -1,0 +1,12 @@
+=> npm init
+	enter the name of the package ( to use the default hit enter)
+	enter the version
+	enter description
+	entry point(): teh file that we need to use to start our web application
+	test command
+	git repository
+	keywords
+	author: kevin ayite
+	license
+	is this ok?
+====> package created
