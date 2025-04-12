@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="/" method="POST" id="form">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   <!--  to be able to use jQuery -->
+
+    <script>
+        $(document).ready(()=>{
+            $('#form').submit((e)=>{
+                e.preventDefault();
+                $.ajax({
+                    url:'/',
+                    type: 'post',
+                    contentType: 'application/json',
+                    data: JSON.stringify($('#form').serializeArray()),
+                    success: (response)=>{
+                        console.log('successfully got response');
+                        console.log(response);
+                    }
+                })
+
+            })
+        })
+    </script>
+</body>
+</html>
